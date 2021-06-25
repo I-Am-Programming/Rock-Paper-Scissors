@@ -27,7 +27,7 @@ function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to  ${convertToWord(computerChoice)}${smallCompWord} You win!`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats  ${convertToWord(computerChoice)}${smallCompWord} You win!`;
     userChoice_div.classList.add('green-glow')
     setTimeout(() => document.getElementById(userChoice).classList.remove('green-glow'), 300)
 }
